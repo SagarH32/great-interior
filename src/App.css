@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+body {
+  background: #e0e0e0;
+  font-family: 'Open Sans', sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+.nav-link {
+  color: #fff !important;
+  cursor: pointer;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+}
+.dashboard__nav {
+  height: 100vh;
+  font-weight: bold;
+  overflow-y: hidden;
+}
+.active__sidebar {
+  background: #e9212e;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 180px;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.review__name,
+.review__designation {
+  height: 70px;
+  border-radius: 10px;
+  color: #a7a7a7 !important;
+}
+.review__description {
+  height: 120px !important;
+  background: #fafafa !important;
+  color: #a7a7a7 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  background: #fafafa !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input::placeholder,
+textarea::placeholder {
+  color: #a7a7a7 !important;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: none !important;
+}
+.btn-warning {
+  background: #e9212e !important;
+  color: #fff !important;
+}
+.text-warning {
+  color: #e9212e !important;
+}
+
+.home__banner {
+  background-color: rgba(42, 24, 71, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff !important;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.home__banner h1 {
+  font-size: 72px;
+}
+.home__banner p {
+  font-size: 24px;
+}
+.home__banner .btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 40px !important;
+}
+.home__card {
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 8px 2px #fff;
+  border-radius: 20px;
+  background: #eeeeee;
+  position: relative;
+  top: -25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home__card__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+}
+
+.home__service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid #e9212e;
+  box-shadow: 0px 0px 8px 2px #fff;
+  padding: 50px 0;
+  background: #eeeeee;
 }
