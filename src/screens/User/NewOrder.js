@@ -20,7 +20,7 @@ const NewOrder = ({ match }) => {
     setPrice(service.price);
     // eslint-disable-next-line
     setDescription(service.description);
-  }, [dispatch, match]);
+  }, [dispatch, match, service.description, service.title, service.price]);
   const handleSubmit = () => {
     dispatch(createOrderAction({ title, price, description }));
   };

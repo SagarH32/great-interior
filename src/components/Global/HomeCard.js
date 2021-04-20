@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomeCard = ({ title, description }) => {
   return (
@@ -7,12 +8,9 @@ const HomeCard = ({ title, description }) => {
         <div className='home__card__body'>
           <h4 className='home__card__title font-weight-bold'>{title}</h4>
           <p className='home__card__description'>{description}</p>
-          <a
-            href='#'
-            className='home__card__link text-warning font-weight-bold'
-          >
+          <Link className='home__card__link text-warning font-weight-bold'>
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </>
